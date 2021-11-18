@@ -37,3 +37,25 @@ const groceryList = [
 ]
 
 console.log(groceryList);
+
+const addToShoppingList = (names, prices,) => {
+
+const newItem = {
+    id: groceryList.length + 1,
+    name: names,
+    price: prices,
+    dateCreated: new Date()
+}
+
+groceryList.push(newItem);
+
+return newItem;
+}
+
+addToShoppingList("soap", 3,);
+addToShoppingList("sprite", 2);
+addToShoppingList("steak", 15);
+addToShoppingList("chips", 4);
+addToShoppingList("salmon", 16);
+
+console.log(groceryList);
